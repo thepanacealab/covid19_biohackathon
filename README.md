@@ -1,3 +1,4 @@
+
 ![COVID-19-BH20](https://github.com/virtual-biohackathons/covid-19-bh20/blob/master/covid19biohackathon.png)
 
 # Repository for the Panacea Lab projects on the [Global COVID-19 Biohackathon](https://github.com/virtual-biohackathons/covid-19-bh20)
