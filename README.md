@@ -4,7 +4,7 @@
 
 As an active member of the [Biohackathon](http://www.biohackathon.org/) community, we are participating as a lab with two projects analyzing our publicly available [Twitter dataset of COVID-19 chatter](http://www.panacealab.org/covid19/).
 
-![COVID-19 BH20 Badge](https://www.jmbanda.com/covid-10biohackbadge.png)
+![COVID-19 BH20 Badge](http://www.jmbanda.com/covid-10biohackbadge.png)
 
 Projects (progress as of 4/8/2020): 
 * **Characterize the information/misinformation around potential COVID-19 treatments**.
