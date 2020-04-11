@@ -1,13 +1,14 @@
-# Project description
+# Identification of symptoms on Twitter users - Quantify how many users are claiming symptoms
 
-We started with 140 Million tweets from January 27th to April 6th. 
+In this project we decided to use our dataset of [150+ million tweets of COVID-19 chatter](https://zenodo.org/record/3738018) to see if we could identify users mentioning COVID-19 related symptoms. The dataset consists of tweets from January 27th to April 6th, all related to COVID-19 chatter, for more details visit the pre-print for the dataset [here](https://arxiv.org/abs/2004.03688). 
 
-After filtering for retweets, bots, and suspicious accounts (the ones that tweet several hundred times a day), we annotated and analized 30,990,645 tweets.
-Our first step was to use a dictionary comprised of terms from SNOMED, MeSH, ICD9/10, CPT, etc. extracted from the OHDSI vocabulary. Note that we included the latest version
-of this vocabulary which includes coronavirus and COVID-19 terms. With this dictionary of 4 million unique terms, we produced over 308 million annotations on  
+## Methodology
 
-In order to narrow down the symptoms and additional COVID-19 clinical observations we used lists of prevalent COVID-19 related terms extracted from EHR's and made publicly available by the Shah lab of Stanford (https://medium.com/@nigam/an-ehr-derived-summary-of-the-presenting-symptoms-of-patients-screened-for-sars-cov-2-910ceb1b22b9)
-with additions released by the Mayo clinic on their MedTagger software (https://github.com/OHNLP/MedTagger/tree/master/src/main/resources/medtaggerieresources/covid19).
+After filtering for retweets, bots, and suspicious accounts (the ones that tweet several hundred times a day), we annotated and analized 30,990,645 tweets. Our annotation process was performed with the NER annotator from the [Social Media Mining Toolkit (SMMT)](https://arxiv.org/abs/2003.13894). Our first step was to use a dictionary comprised of terms from SNOMED, MeSH, ICD9/10, CPT, etc. extracted from the OHDSI vocabulary. Note that we included the latest version of this vocabulary includes COVID-19 terms. With this dictionary of 4 million unique terms we produced over 308 million annotations on the filtered set of tweets.
+
+In order to narrow down the symptoms and additional COVID-19 clinical observations we used lists of prevalent COVID-19 related terms extracted from EHR's and made publicly available by the [Shah lab of Stanford](https://medium.com/@nigam/an-ehr-derived-summary-of-the-presenting-symptoms-of-patients-screened-for-sars-cov-2-910ceb1b22b9) with additions released by the Mayo clinic on their [MedTagger software](https://github.com/OHNLP/MedTagger/tree/master/src/main/resources/medtaggerieresources/covid19).
+
+## Results
 
 Focusing on these 50+ terms, without adding misspellings we identified a total of 435,482 annotations on 347,993 unique Tweets. Here is the list of top 10:
 
