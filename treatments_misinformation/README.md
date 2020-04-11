@@ -27,7 +27,6 @@ A total of **1,088,807** drug tweets were annotated using the drug dictionary pr
 |vicodin|25126 |
 |plaquenil|23430 |
 |advil|20739 |
-|pill|13285 |
 |dettol|9188 |
 |tylenol|5946 |
 |cocaine|3955 |
