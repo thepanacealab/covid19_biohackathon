@@ -19,49 +19,66 @@ bibliography: paper.bib
 
 # Introduction or Background
 
-Add to this section a couple of paragraphs introducing the work done dring the BioHackathon, CodeFest, VoCamp or Sprint event. Please add references whenever needed, for instance [@Katayamaetal-2010].
+In this project we decided to use our dataset of [150+ million tweets of COVID-19 chatter](https://zenodo.org/record/3738018) to see if we could identify users mentioning COVID-19 related symptoms. The dataset consists of tweets from January 27th to April 6th, all related to COVID-19 chatter, for more details visit the pre-print for the dataset [here](https://arxiv.org/abs/2004.03688). 
 
-Please separate paragraphs with a double line.
+## Methodology
 
-## Subsection level 2
+After filtering for retweets, bots, and suspicious accounts (the ones that tweet several hundred times a day), we annotated and analized 30,990,645 tweets. Our annotation process was performed with the NER annotator from the [Social Media Mining Toolkit (SMMT)](https://arxiv.org/abs/2003.13894). Our first step was to use a dictionary comprised of terms from SNOMED, MeSH, ICD9/10, CPT, etc. extracted from the OHDSI vocabulary. Note that we included the latest version of this vocabulary includes COVID-19 terms. With this dictionary of 4 million unique terms we produced over 308 million annotations on the filtered set of tweets.
 
-Please keep sections to a maximum of three levels, even better if only two levels.
+In order to narrow down the symptoms and additional COVID-19 clinical observations we used lists of prevalent COVID-19 related terms extracted from EHR's and made publicly available by the [Shah lab of Stanford](https://medium.com/@nigam/an-ehr-derived-summary-of-the-presenting-symptoms-of-patients-screened-for-sars-cov-2-910ceb1b22b9) with additions released by the Mayo clinic on their [MedTagger software](https://github.com/OHNLP/MedTagger/tree/master/src/main/resources/medtaggerieresources/covid19).
 
-### Subsection level 3
+## Results
 
-Please keep sections to a maximum of three levels.
+Focusing on these 50+ terms, without adding misspellings we identified a total of 435,482 annotations on 347,993 unique Tweets. Here is the list of top 10:
 
-## Tables, figures and so on
+| Term          | Frequency |
+| ------------- | --------- |
+|pneumonia      |	110124    |
+|infection      |	71882     |
+|influenza      | 36390     |
+|cough          |	35753     |
+|anxiety        | 34658     |
+|pain           | 12773     |
+|depression     |	12189     |
+|asthma         | 8307      |
+|oxygen         | 5511      |
+|ibuprofen      | 5310      |
 
-Please remember to introduce tables (see Table 1) before they appear on the document. We recommend to center tables, formulas and figure but not the corresponding captions. Feel free to modify the table style as it better suits to your data.
+So we made it to find 264,132 unique Twitter users that discussed the preselected symptoms and clinical observations. So we now how to disambiguate their claims.
 
-Table 1
-| Header 1 | Header 2 |
-| -------- | -------- |
-| item 1 | item 2 |
-| item 3 | item 4 |
+However, this is not including misspellings, which are very prevalent in Twitter. So we took the 50+ common symptoms and clinical finding and generated their common misspellings
+based on traditional lists of common misspellings and keyboard layout. Producing an additional dictionary of around 5,400 terms.
 
-Remember to introduce figures (see Figure 1) before they appear on the document. 
+With these annotations, we were able to find that these are the top 10 most mispelled words:
 
-![BioHackrXiv logo](./biohackrxiv.png)
- 
-Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
+| Term          | Frequency |
+| ------------- | --------- |
+| pneumonia     |	134242    |
+| rash          |	130023    |
+| infection     |	122544    |
+| rales         |	53330     |
+| influenza     |	47215     |
+| anxiety       |	45520     |
+| pain          |	29918     |
+| depression    | 15021     |
+| asthma        | 11399     |
+| ibuprofen     | 8419      |
 
-# Other main section on your manuscript level 1
+These allowed us to find an extra 653,431 annotations from 525,392 relevant unique tweets. These tweets come from an additional 176,121 unique Twitter users.
 
-Feel free to use numbered lists or bullet points as you need.
-* Item 1
-* Item 2
+Overall, we recovered  873,385 relevant Tweets (for this subset of 50+ terms) leading us to 440,253 unique users we need to further evaluate to ascertain their claims.
 
-# Discussion and/or Conclusion
+## What are we releasing as a deliverable for this biohackathon - found in this repository
+* Annotation code
+* Dictionary files (OHDSI dictionary, symptoms dictionary, and mispellings dictionary)
+* Tweet annotations - Upon Request
+* Note: All manipulations and counts of the annotations were done using SQL on a PostgreSQL database. Scripts and queries will be added later.
 
-We recommend to include some discussion or conclusion about your work. Feel free to modify the section title as it fits better to your manuscript.
-
-# Future work
-
-And maybe you want to add a sentence or two on how you plan to continue. Please keep reading to learn about citations and references.
-
-For citations of references, we prefer the use of parenthesis, last name and year. If you use a citation manager, Elsevier – Harvard or American Psychological Association (APA) will work. If you are referencing web pages, software or so, please do so in the same way. Whenever possible, add authors and year. We have included a couple of citations along this document for you to get the idea. Please remember to always add DOI whenever available, if not possible, please provide alternative URLs. You will end up with an alphabetical order list by authors’ last name.
+## Things to do post hackathon
+* Collect additional data for the identified users. 
+* Perform small manual review/annotation.
+* Build ML models to automate. 
+* Expand EHR term list from findings on Twitter.
 
 # Jupyter notebooks, GitHub repositories and data repositories
 
