@@ -11,6 +11,6 @@ Projects (Details are found under each projects folder in this repo):
 * **Characterize the information/misinformation around potential COVID-19 treatments**.
 * **Identification of symptoms on Twitter users - Quantify how many users are claiming symptoms**
 
-Midway Presentation: https://docs.google.com/presentation/d/1FKXdhL0p8nZMcO-JTFz2fTn0hKozqzl3LT28eBzRMUk/edit?usp=sharing
+Midway Presentation: https://docs.google.com/presentation/d/1FKXdhL0p8nZMcO-JTFz2fTn0hKozqzl3LT28eBzRMUk/edit#slide=id.g7f92c24e05_2_42
 
-Final Presentation: https://docs.google.com/presentation/d/12Ro6pb7e_KcEnn2ThXtAs4Wohp0cCQcrexD0S95VMdI/edit?usp=sharing
+Final Presentation: https://docs.google.com/presentation/d/12Ro6pb7e_KcEnn2ThXtAs4Wohp0cCQcrexD0S95VMdI/edit#slide=id.g732e9aa86f_35_3
