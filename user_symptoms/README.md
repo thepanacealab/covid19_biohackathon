@@ -1,5 +1,7 @@
 # Identification of symptoms on Twitter users - Quantify how many users are claiming symptoms
 
+![COVID-19 BH20 Badge](http://www.jmbanda.com/covid-10biohackbadge.png)
+
 In this project we decided to use our dataset of [150+ million tweets of COVID-19 chatter](https://zenodo.org/record/3738018) to see if we could identify users mentioning COVID-19 related symptoms. The dataset consists of tweets from January 27th to April 6th, all related to COVID-19 chatter, for more details visit the pre-print for the dataset [here](https://arxiv.org/abs/2004.03688). 
 
 ## Methodology
@@ -53,6 +55,7 @@ Overall, we recovered  873,385 relevant Tweets (for this subset of 50+ terms) le
 * Annotation code
 * Dictionary files (OHDSI dictionary, symptoms dictionary, and mispellings dictionary)
 * Tweet annotations - Upon Request
+* Note: All manipulations and counts of the annotations were done using SQL on a PostgreSQL database. Scripts and queries will be added later.
 
 ## Things to do post hackathon
 * Collect additional data for the identified users. 
