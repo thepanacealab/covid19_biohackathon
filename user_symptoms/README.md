@@ -49,14 +49,17 @@ These allowed us to find an extra 653,431 annotations from 525,392 relevant uniq
 
 Overall, we recovered  873,385 relevant Tweets (for this subset of 50+ terms) leading us to 440,253 unique users we need to further evaluate to ascertain their claims.
 
+## Things to do post hackathon
+* Collect additional data for the identified users. 
+* Perform small manual review/annotation.
+* Build ML models to automate. 
+* Expand EHR term list from findings on Twitter.
 
-Things learned:
+## Things learned:
 
-Big dictionary = nice large coverage.... but how to filter the important stuff?
+Big dictionary = nice large coverage.... but how to filter the important stuff? Luckily OHDSI has different domains and concept classes.. but additional filtering is still needed.
 
 ```
 AND (D.domain_id = 'Observation' OR D.domain_id = 'Condition') AND B.concept_name != ' ' AND char_length(B.concept_name) >= 4
 AND (D.vocabulary_id='MeSH' OR D.vocabulary_id='SNOMED') AND (D.concept_class_id='Clinical Finding')
 ```
-
-Needs tons of work to narrow down!
