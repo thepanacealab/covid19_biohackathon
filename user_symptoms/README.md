@@ -49,6 +49,11 @@ These allowed us to find an extra 653,431 annotations from 525,392 relevant uniq
 
 Overall, we recovered  873,385 relevant Tweets (for this subset of 50+ terms) leading us to 440,253 unique users we need to further evaluate to ascertain their claims.
 
+## What are we releasing as a deliverable for this biohackathon - found in this repository
+* Annotation code
+* Dictionary files (OHDSI dictionary, symptoms dictionary, and mispellings dictionary)
+* Tweet annotations - Upon Request
+
 ## Things to do post hackathon
 * Collect additional data for the identified users. 
 * Perform small manual review/annotation.
