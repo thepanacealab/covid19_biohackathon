@@ -74,9 +74,8 @@ Not unexpectedly, Hydroxychloroquine was the most tweeted drug found on the data
 
 Table 3. Most frequent misspelled drugs found using the two methods
 
-| Keyboard Layout Method | | | QMisSpell Method | |
+| Keyboard Layout Method Drug Name | Keyboard Layout Method Frequency | QMisSpell Method Drug Name | QMisSpell Method Frequency  |
 | -------- | -------- | -------- | -------- | 
-| Drug Name | Frequency | Drug Name  | Frequency |
 | chloroquine | 16,361 | hydroxychloroquine | 6,650 |
 | vitamin a | 12,094 | allegra | 6,266 |
 | agar | 8,933 | meted | 5,135 |
