@@ -73,6 +73,7 @@ Table 2. Most frequent drugs found using the drug dictionary.
 Not unexpectedly, Hydroxychloroquine was the most tweeted drug found on the dataset with chloroquine coming in as close second, as shown on Table 2. Interestingly enough, hydroxychloroquine was not the most misspelled word, chloroquine was, as we can see on Table 3.
 
 Table 3. Most frequent misspelled drugs found using the two methods
+
 | Keyboard Layout Method | | | QMisSpell Method | |
 | -------- | -------- | -------- | -------- | 
 | Drug Name | Frequency | Drug Name  | Frequency |
