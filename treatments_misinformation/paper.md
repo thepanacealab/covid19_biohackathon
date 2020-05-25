@@ -43,6 +43,7 @@ We employed two different methodologies, a machine learning approach called QMis
 The second methodology utilizes keyboard layout distance for generating the misspellings. For each term, each alphabet is replaced with the closest alphabet on the QWERTY keyboard. This process is recursive and ceases when it has looped through every alphabet in the term. For example, the term cocaine has 68 misspelled terms which vary from xocaine to cocaint. After eliminating the common vocabulary and duplicates, a total of 15,696 terms are identified as misspelled terms for this methodology. We annotated the clean dataset utilizing the misspelled terms from the methodologies. Table 1 summarizes the results. Overlap between QMisSpell and the Keyboard Layout generator is 4.9%. 33 terms were common between the two misspelled dictionaries.
 
 Table 1. Term annotation results
+
 | Dictionary | Total number of terms |Total annotated terms |
 | -------- | -------- | -------- |
 | RxNorm drug Dictionary | 19,643 | 768,752 |
