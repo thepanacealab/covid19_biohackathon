@@ -8,7 +8,7 @@ As an active member of the [Biohackathon](http://www.biohackathon.org/) communit
 ![COVID-19 BH20 Badge](http://www.jmbanda.com/covid-10biohackbadge.png) 
 
 Projects (Details are found under each projects folder in this repo): 
-* **Characterize the information/misinformation around potential COVID-19 treatments**.
+* **Characterization of Potential Drug Treatments forCOVID-19 using Twitter**.
 * **Identification of symptoms on Twitter users - Quantify how many users are claiming symptoms**
 
 Midway Presentation: https://docs.google.com/presentation/d/1FKXdhL0p8nZMcO-JTFz2fTn0hKozqzl3LT28eBzRMUk/edit#slide=id.g7f92c24e05_2_42
