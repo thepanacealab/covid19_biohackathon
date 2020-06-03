@@ -1,4 +1,4 @@
-# Characterize the information/misinformation around potential COVID-19 treatments using Twitter data
+# Characterization of Potential Drug Treatments forCOVID-19 using Twitter
 The objective of this project is to analyze whether Twitter data can be utilized to characterize the information related to treatments for COVID-19. For this project, we utilized our  [150+ million tweets of COVID-19 chatter](https://zenodo.org/record/3738018). The dataset consists of tweets from January 27th to April 6th, all related to COVID-19 chatter, for more details visit the pre-print for the dataset [150+ million tweets of COVID-19 chatter](https://arxiv.org/abs/2004.03688).
 
 ## Methodology
